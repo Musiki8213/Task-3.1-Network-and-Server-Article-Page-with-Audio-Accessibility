@@ -6,6 +6,7 @@
   <title>Network and Servers</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+
     body {
   margin: 0;
   padding: 0;
@@ -122,6 +123,8 @@ padding-right: 10px;
 #headerDiv a {
   text-decoration: none;
   color: #ffffff;
+  
+  font-weight: 500;
 }
 
 #headLinksDiv li {
@@ -135,6 +138,49 @@ padding-right: 10px;
   text-decoration-color:  #00FFFF;
   color: #FF8C00;
 }
+@media (min-width: 350px) and (max-width: 1400px) {
+  header h1 {
+    padding-left: 80px;
+    font-size: 32px;
+  }
+
+  header p {
+    padding-left: 90px;
+    font-size: 16px;
+    color:#66ccff;
+    font-weight: 600;
+  }
+
+  #headLinksDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #headLinksDiv li {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  audio {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  article {
+    padding: 30px;
+    max-width: 600px;
+  margin: auto;
+}
+#headerDiv a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+  }
+  
+
   </style>
 </head>
 
@@ -290,9 +336,8 @@ padding-right: 10px;
     </section>
 
     <audio id="audio" controls>
-      <source src="networks-and-servers.m4a.m4a" type="audio/mpeg">
+      <source src="networks-and-servers.m4a" type="audio/mpeg">
       Your browser doesn’t support the audio element.
-      <a href="networks-and-servers.m4a.m4a">Download the MP3</a>.
     </audio>
   </section>
   </article>
