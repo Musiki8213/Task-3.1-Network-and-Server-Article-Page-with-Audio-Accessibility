@@ -7,95 +7,153 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-      color: #333;
-    }
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/Gemini_Generated_Image_e26hwye26hwye26h.png');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  color: #B3D4F7;
+}
 
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 50px;
-      text-align: center;
-    }
+header {
+  padding-top: 50px;
+  color: #00FFFF;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-      font-style: italic;
-    }
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-style: italic;
+  padding-left: 250px;
+}
 
-    article {
-      padding: 50px;
-      max-width: 1000px;
-      margin: auto;
-    }
+header p {
+  padding-left: 350px;
+  color: #B3D4F7;
+}
 
-    section {
-         margin-bottom: 30px;
-         padding: 20px;
-         background-color: white;
-        border-radius: 20px;
-    }
+article {
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    section h2 {
-      color: #004080;
-      margin-bottom: 40px;
-    }
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(10, 25, 47, 0.85);
+  border-radius: 12px;
+  border: 1px solid #00FFFF;
+}
 
-    h3 {
-      margin-top: 10px;
-      color: #333;
-    }
+section:hover {
+  background-color: rgba(10, 25, 47, 0.95);
+}
+section h2 {
+  color: #FF8C00;
+  margin-bottom: 25px;
+}
 
-    ul {
-      padding-left: 40px;
-    }
+h3 {
+  margin-top: 10px;
+  color: #00FFFF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-    li {
-      margin-bottom: 10px;
-    }
+ul {
+  padding-left: 40px;
+}
 
-    i {
-      margin-right: 10px;
-      color: #004080;
-    }
+li {
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #f5f5f5;
+}
 
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
+i {
+  margin-right: 10px;
+  color: #FF8C00;
+}
 
-    footer a {
-      color: #66ccff;
-      text-decoration: none;
-    }
+footer {
+  background-color: #05101D;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #00FFFF;
+}
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+footer a {
+  color: #66ccff;
+  text-decoration: none;
+}
 
-    
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color:  #00FFFF;
+}
+
+#server-functionality p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #B3D4F7;
+}
+
+footer i {
+  color: #00FFFF;
+}
+
+audio {
+  padding-left: 200px;
+}
+
+header ul {
+  list-style: none;
+}
+
+#headerDiv {
+   display: flex;
+
+position: fixed;
+
+padding-right: 10px;
+}
+
+
+#headerDiv a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#headLinksDiv li {
+  padding: 10px 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  color: inherit;
+}
   </style>
 </head>
 
 <body>
     
 
-<header>
-  <h1><i class="fas fa-network-wired"></i> Understanding Networking and Server Technologies</h1>
-  <p>This educational article covers key networking topics including Wi-Fi USB dongles, secure internet collaboration, wireless network types, and the functions of server networks — designed for accessibility and easy learning.</p>
+<header id="head">
+  <h1>Understanding Networking and Server Technologies</h1>
+<p>This educational article covers key networking topics including Wi-Fi USB dongles, secure internet collaboration, <br>
+  wireless network types, and the functions of server networks — designed for accessibility and easy learning.</p>
+ <div id="headerDiv">
+  <ul id="headLinksDiv">
+    <a href="#head"><li>Home</li></a>
+    <a href="#wifi-usb-dongles"><li>Wi-Fi USB Dongles</li></a> 
+    <a href="#secure-collaboration"><li>Secure Collaboration</li></a> 
+    <a href="#network-types-functions"><li> Networking and Wireless Connections</li></a>
+   <a href="#server-functionality"><li>Server Networks</li></a>
+    <a href="#audio"><li>Audio</li></a> 
+  </ul>
 </header>
-<br>
- <audio controls>
-      <source src="networks-and-servers.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+  
+</div>
   <article>
 
     <section id="wifi-usb-dongles">
@@ -228,6 +286,10 @@
       </ul>
     </section>
 
+ <audio id="audio" controls>
+  <source src="networks-and-servers.m4a" type="audio/mp4">
+  Your browser does not support the audio element.
+</audio>
   </article>
 
   <footer>
