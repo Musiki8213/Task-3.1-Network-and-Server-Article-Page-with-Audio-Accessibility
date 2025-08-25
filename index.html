@@ -6,8 +6,7 @@
   <title>Network and Servers</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-
-    body {
+body {
   margin: 0;
   padding: 0;
   background-image: url('assets/Gemini_Generated_Image_e26hwye26hwye26h.png');
@@ -46,11 +45,13 @@ section {
   background-color: rgba(10, 25, 47, 0.85);
   border-radius: 12px;
   border: 1px solid #00FFFF;
+  transition: background-color 0.3s ease;
 }
 
 section:hover {
   background-color: rgba(10, 25, 47, 0.95);
 }
+
 section h2 {
   color: #FF8C00;
   margin-bottom: 25px;
@@ -106,24 +107,29 @@ footer i {
 }
 
 audio {
-  padding-left: 200px;
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
 }
 
 header ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #headerDiv {
-   display: flex;
-position: fixed;
-padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  z-index: 1000;
 }
-
 
 #headerDiv a {
   text-decoration: none;
   color: #ffffff;
-  
   font-weight: 500;
 }
 
@@ -133,12 +139,15 @@ padding-right: 10px;
   font-size: large;
   color: inherit;
 }
+
 #headLinksDiv a:hover {
   text-decoration: underline;
   text-decoration-color:  #00FFFF;
   color: #FF8C00;
 }
-@media (min-width: 350px) and (max-width: 1400px) {
+
+/* ===== Responsive ===== */
+@media (max-width: 1400px) {
   header h1 {
     padding-left: 80px;
     font-size: 32px;
@@ -162,24 +171,83 @@ padding-right: 10px;
     font-size: 16px;
   }
 
+  article {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+  }
+
   audio {
     padding-left: 0;
     width: 100%;
   }
+}
+
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  header p {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  header p {
+    padding-left: 10px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  #headLinksDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #headLinksDiv li {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
 
   article {
-    padding: 30px;
-    max-width: 600px;
-  margin: auto;
-}
-#headerDiv a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
+    padding: 15px;
+  }
+
+  section {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
 }
 
-  }
-  
 
   </style>
 </head>
