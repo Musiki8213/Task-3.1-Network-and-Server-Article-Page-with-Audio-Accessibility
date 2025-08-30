@@ -122,15 +122,15 @@ header ul {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  top: 0;
-  right: 10px;
+  left: 50px;
   z-index: 1000;
 }
 
 #headerDiv a {
   text-decoration: none;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 900;
+  
 }
 
 #headLinksDiv li {
@@ -147,104 +147,147 @@ header ul {
 }
 
 /* ===== Responsive ===== */
+
+@media (max-width: 1600px) {
+  header h1 {
+    font-size: 38px;
+    padding-left: 200px;
+  }
+  #headerDiv a {
+  display: none;
+}
+  header p {
+    font-size: 18px;
+    padding-left: 300px;
+  }
+  article {
+    max-width: 900px;
+  }
+}
+
 @media (max-width: 1400px) {
   header h1 {
     padding-left: 80px;
     font-size: 32px;
   }
-
   header p {
     padding-left: 90px;
     font-size: 16px;
     color:#66ccff;
     font-weight: 600;
   }
-
   #headLinksDiv {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
   }
-
   #headLinksDiv li {
     padding: 8px 12px;
     font-size: 16px;
   }
-
   article {
     padding: 30px;
     max-width: 600px;
     margin: auto;
   }
-
   audio {
-    padding-left: 0;
     width: 100%;
   }
 }
 
+
 @media (max-width: 900px) {
+  #headerDiv a {
+  display: none;
+}
   header h1 {
     font-size: 28px;
     padding-left: 20px;
   }
-
   header p {
     padding-left: 20px;
     font-size: 14px;
   }
-
   section {
     padding: 15px;
   }
-
   ul {
     padding-left: 20px;
   }
-
   li {
     font-size: 14px;
   }
+  audio {
+    width: 100%;
+  }
 }
 
+
 @media (max-width: 600px) {
+  #headerDiv a {
+  display: none;
+}
   header h1 {
     font-size: 22px;
     padding-left: 10px;
     text-align: center;
   }
-
   header p {
     padding-left: 10px;
     text-align: center;
     font-size: 13px;
   }
-
   #headLinksDiv {
     flex-direction: column;
     align-items: center;
   }
-
   #headLinksDiv li {
     padding: 6px 10px;
     font-size: 14px;
   }
-
   article {
     padding: 15px;
   }
-
   section {
     padding: 10px;
     margin-bottom: 20px;
   }
-
   h3 {
     font-size: 14px;
   }
-
   section h2 {
     font-size: 18px;
+  }
+  audio {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #headerDiv a {
+  display: none;
+}
+  header h1 {
+    font-size: 18px;
+  }
+  header p {
+    font-size: 12px;
+  }
+  #headLinksDiv li {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  section h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  article {
+    padding: 10px;
+  }
+  section {
+    padding: 8px;
   }
 }
 
@@ -264,7 +307,7 @@ header ul {
     <a href="#head"><li>Home</li></a>
     <a href="#wifi-usb-dongles"><li>Wi-Fi USB Dongles</li></a> 
     <a href="#secure-collaboration"><li>Secure Collaboration</li></a> 
-    <a href="#network-types-functions"><li> Networking and Wireless Connections</li></a>
+    <a href="#network-types-functions"><li> Networking and Wireless <br>Connections</li></a>
    <a href="#server-functionality"><li>Server Networks</li></a>
     <a href="#audio"><li>Audio</li></a> 
   </ul>
